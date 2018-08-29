@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS homer;
+CREATE SCHEMA IF NOT EXISTS `homer` DEFAULT CHARACTER SET utf8 ;
+USE `homer` ;
+CREATE TABLE users 
+( 
+    id INTEGER PRIMARY KEY AUTO_INCREMENT, 
+    email VARCHAR(90) UNIQUE, 
+    password VARCHAR(90), 
+    name VARCHAR(90), 
+    lastname VARCHAR(90) 
+);

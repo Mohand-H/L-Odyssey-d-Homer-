@@ -5,6 +5,7 @@ const  express  =  require('express');
 const  bodyParser  =  require('body-parser');
 const  morgan  =  require('morgan');
 const  app  =  express();
+const  mysql = require('mysql')
 const authRouter = require('./routes/auth/auth.js')
 
 // je configure l'application
